@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-// import { SENDGRID_API, SENDGRID_API_KEY } from "../config";
+// import { SENDGRID_API, SENDGRID_API_KEY } from "../config"; // local test only
 
 const sendEmail = async ({ name, email }) => {
   await fetch(process.env.SENDGRID_API, {
@@ -20,7 +20,7 @@ const sendEmail = async ({ name, email }) => {
         }
       ],
       from: {
-        email: 'damon.wu@complispace.com.au',
+        email: 'damon.compliancespace@gmail.com',
         name: 'damon as tester'
       },
       content: [
